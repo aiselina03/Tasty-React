@@ -1,0 +1,89 @@
+.footer {
+  max-width: 100%;
+  min-height: 60vh;
+  width: 100%;
+  background: #27272b;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  h3 {
+    color: white;
+    margin: 20px 0;
+    font-size: 26px;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 30px;
+    font-size: 19px;
+  }
+  .fa-brands {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    margin: 20px;
+  }
+  ul {
+    line-height: 30px;
+    li {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  .foot1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    gap: 60px;
+  }
+  .foot2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .footer {
+    min-height: auto;
+    padding: 20px;
+    .foot1 {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 30px;
+      h3{
+        font-size: 20px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    .foot2{
+      p{
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .footer {
+    min-height: auto;
+    padding: 20px;
+    .foot1 {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 30px;
+      h3{
+        font-size: 20px;
+      }
+      p{
+        font-size: 16px;
+      }
+    }
+    .foot2{
+      p{
+        margin-top: 30px;
+        font-size: 16px;
+      }
+    }
+  }
+}
